@@ -121,7 +121,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
             }else {
                 //当前商品在购物车中的份数不为1，修改份数即可
                 shoppingCart.setNumber(shoppingCart.getNumber() - 1);
-                shoppingCartMapper.updateNumberById(shoppingCart);
+                shoppingCartMapper. updateNumberById(shoppingCart);
             }
         }
     }
