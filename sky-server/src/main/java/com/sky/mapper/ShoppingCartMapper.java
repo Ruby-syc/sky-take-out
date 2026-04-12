@@ -52,4 +52,11 @@ public interface ShoppingCartMapper {
     void deleteById(Long id);
 
     void updateNumberById(ShoppingCart shoppingCart);
+
+    /**
+     * 批量插入购物车数据
+     *
+     * @param shoppingCartList
+     */
+    void insertBatch(List<ShoppingCart> shoppingCartList);
 }
